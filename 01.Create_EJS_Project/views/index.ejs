@@ -1,0 +1,28 @@
+<%- include("layout/html5") %>
+    <title>Home</title>
+    <%- include("layout/header") %>
+        <main>
+            <div>
+                <h1>Welcome to EJS tutorial</h1>
+                <div>
+                    <form action="/" method="POST">
+                        <input type="text" placeholder="Programming Language" name="pLang" required>
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
+                <div>
+                    <ul>
+                        <% if(pLanguage.length> 0){ %>
+                            <% for(let x=0; x < pLanguage.length; x++){ %>
+                                <li>
+                                    <%= pLanguage[x] %>
+                                </li>
+                                <% } %>
+                                    <%} else{ %>
+                                        <p>No Data Found</p>
+                                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <%- include("layout/footer") %>

@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  display: flexbox;
+  position: relative;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  height: 5vh;
+  background-color: darkslateblue;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  li {
+    padding: 0.2rem 1rem;
+    a {
+      color: white;
+    }
+    a:hover {
+      color: orange;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  background-color: slateblue;
+  align-items: center;
+  padding: 1.5rem;
+
+  div {
+    padding: 1rem;
+  }
+  h1 {
+    color: bisque;
+    text-align: center;
+    padding: 0.6rem;
+  }
+  h3,
+  h4,
+  p {
+    text-align: center;
+    color: white;
+    padding-bottom: 0.4rem;
+  }
+  form {
+    display: flex;
+    width: 100%;
+
+    input {
+      width: 17rem;
+      height: 2.5rem;
+      border: none;
+      outline: none;
+      background-color: darkslateblue;
+      font-size: 1.3rem;
+      padding-left: 0.7rem;
+    }
+    input:focus {
+      background-color: mediumslateblue;
+      color: white;
+    }
+    button {
+      width: 5rem;
+      height: 2.5rem;
+      background-color: darkslateblue;
+      color: white;
+      font-size: 1.3rem;
+      border: none;
+      transition: all 0.6s;
+    }
+    button:hover {
+      background-color: orange;
+      color: blue;
+    }
+  }
+  ul {
+    overflow: scroll;
+    scrollbar-width: none;
+
+    li {
+      padding: 0.6rem 1rem;
+      background-color: white;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 0.4rem;
+      transition: all 0.6s;
+      border: 1px solid blue;
+      border-radius: 5px;
+    }
+    li:hover {
+      background-color: black;
+      color: white;
+      box-shadow: 5px 5px 10px orange;
+    }
+  }
+}
